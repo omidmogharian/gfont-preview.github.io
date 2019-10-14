@@ -9,9 +9,11 @@
             width: 80%;
         }
         .row{
-            font-family: 'ABeeZee';
-        width: 50%;
-                display: inline-table;}
+             width: 50%;
+             display: inline-table;
+            height: 50px;
+            font-size: 20px;
+        }
     </style>
 </head>
 
@@ -26,7 +28,7 @@
               var css = `@import url('https://fonts.googleapis.com/css?family=${k}');`;
               $('<style/>').append(css).appendTo(document.head);
               $(`<div class="row" style="font-family: '${k}'"/>`).text(`natix`).append(
-              $(`<span style="font-family: '${k}'"/>`).text(`(${k})`)).appendTo($('#preview'));
+              $(`<br/><span style="font-family: '${k}'"/>`).text(`(${k})`)).appendTo($('#preview'));
           });
     });
     });
