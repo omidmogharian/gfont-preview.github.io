@@ -8,6 +8,10 @@
             text-align: center;
             width: 80%;
         }
+        .row{
+            font-family: 'ABeeZee';
+        width: 50%;
+                display: inline-table;}
     </style>
 </head>
 
@@ -21,8 +25,8 @@
               //if (v.category!=='sans-serif') return; //add filter if you are interested in only a subset of the fonts
               var css = `@import url('https://fonts.googleapis.com/css?family=${k}');`;
               $('<style/>').append(css).appendTo(document.head);
-              $(`<h1 style="font-family: '${k}'"/>`).text(`natix`).appendTo($('#preview'));
-              $(`<span style="font-family: '${k}'"/>`).text(`(${k})`).appendTo($('#preview'));
+              $(`<div class="row" style="font-family: '${k}'"/>`).text(`natix`).append(;
+              $(`<span style="font-family: '${k}'"/>`).text(`(${k})`)).appendTo($('#preview'));
           });
     });
     });
